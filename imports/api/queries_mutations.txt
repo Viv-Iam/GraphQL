@@ -37,4 +37,22 @@ query getAllTasks {
 query getIncompleteCount {
     getIncompleteCount
 }
+query getAuthor{
+  getOneAuthor(firstName: "Edmond", lastName: "Jones") {
+    firstName
+    lastName
+    posts {
+      title
+      views
+    }
+  }
+  getFortuneCookie
+}
+
+query getAuthors {
+  getAllAuthors {
+    firstName
+    lastName
+  }
+}
 query getAuthor {}
