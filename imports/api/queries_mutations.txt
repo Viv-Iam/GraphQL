@@ -1,0 +1,40 @@
+mutation toggleChecked {
+    toggledChecked(id: "") {
+        _id
+        text
+        createdAt
+        checked
+    }
+}
+
+mutation addTask {
+    addTask(text: "Try driving") {
+        _id
+        text
+        createdAt
+        checked
+    }
+}
+mutation deleteTask {
+    deleteTask(id: "")
+}
+query getTask {
+    getOneTask(id: "") {
+        _id
+        text
+        createdAt
+        checked
+    }
+}
+query getAllTasks {
+    getAllTasks{
+        _id
+        text
+        createdAt
+        checked
+    }
+}
+query getIncompleteCount {
+    getIncompleteCount
+}
+query getAuthor {}

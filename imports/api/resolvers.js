@@ -1,6 +1,6 @@
 import { GraphQLDateTime } from 'graphql-iso-date'
 import { Author, FortuneCookie } from './connectors.js'
-import { View, Tasks } from './tasks'
+import { Views, Tasks } from './tasks'
 
 // A map of functions which return data for the schema
 const resolvers = {
