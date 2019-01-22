@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize';
 import fetch from 'node-fetch';
 
-const db = new Sequelize('blog', null, null {
+const db = new Sequelize('blog', null, null, {
     dialect: 'sqlite',
     storage: './blog.sqlite',
 });
