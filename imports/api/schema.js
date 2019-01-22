@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-express';
 
 // The GraphQL schema
 
-const typtDefs = gql`
+const typeDefs = gql`
 scalar Date
 type Query {
     getOneAuthor(firstName: String, lastName: String): Author
